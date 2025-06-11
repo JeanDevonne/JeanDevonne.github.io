@@ -36,7 +36,7 @@ export default function ContactForm() {
           const errorMessage = data.error[0].message;
           throw new Error(errorMessage);
         }
-        throw new Error(data.error || "Error al enviar");
+        throw new Error(data.error.message || "Error al enviar");
       }
 
       // Éxito: Actualiza la notificación
