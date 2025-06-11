@@ -3,6 +3,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 import { expCards } from "../../constants";
 import TitleHeader from "../../components/ui/TitleHeader";
@@ -96,7 +97,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
+      className="flex-center md:pt-30 pt-20 section-padding xl:px-0"
     >
       <div className="w-full h-full">
         <TitleHeader
@@ -110,7 +111,7 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card} index={index}>
                     <div>
-                      <img src={card.imgPath} height={50} width={120} className="cover" alt="exp-img" />
+                      <Image src={card.imgPath} height={50} width={120} className="cover" alt="exp-img" />
                     </div>
                   </GlowCard>
                 </div>

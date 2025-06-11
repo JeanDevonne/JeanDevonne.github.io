@@ -1,56 +1,62 @@
 import Experience from "@/sections/Experience/Experience";
 import Hero from "@/sections/Hero/Hero";
+import Image from "next/image";
+
 export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Proyecto 1",
+      title: "Groom",
       description: "Descripción del proyecto 1",
-      image: "https://casesworld.pe/cdn/shop/files/WhatsApp_Image_2024-10-20_at_10.42.36_PM.jpg",
-      tags: ["HTML", "CSS", "JavaScript"],
-      githubLink: "",
+      image: "/projects/groom.jpg",
+      tags: ["Astro", "Tailwind CSS", "Stripe"],
+      githubLink: "https://github.com/JeanDevonne/groom-landing",
+      demoLink: "https://joingroom.com/",
     },
     {
       id: 2,
-      title: "Proyecto 1",
+      title: "Auna Mini Site",
       description: "Descripción del proyecto 1",
-      image: "https://casesworld.pe/cdn/shop/files/WhatsApp_Image_2024-10-20_at_10.42.36_PM.jpg",
-      tags: ["HTML", "CSS", "JavaScript"],
-      githubLink: "",
+      image: "/projects/auna.jpg",
+      tags: ["PUG", "SASS", "Express.js", "Vercel"],
+      githubLink: "https://github.com/JeanDevonne/auna-minisite",
+      demoLink: "https://auna-minisite.vercel.app/",
     },
     {
       id: 3,
-      title: "Proyecto 1",
+      title: "Todo List",
       description: "Descripción del proyecto 1",
-      image: "https://casesworld.pe/cdn/shop/files/WhatsApp_Image_2024-10-20_at_10.42.36_PM.jpg",
-      tags: ["HTML", "CSS", "JavaScript"],
-      githubLink: "",
+      image: "/projects/todo.jpg",
+      tags: ["HTML", "CSS", "Vue.js", "GitHub"],
+      githubLink: "https://github.com/JeanDevonne/todo",
+      demoLink: "https://jeandevonne.github.io/todo/",
     },
     {
       id: 4,
-      title: "Proyecto 1",
+      title: "10 Lukas",
       description: "Descripción del proyecto 1",
-      image: "https://casesworld.pe/cdn/shop/files/WhatsApp_Image_2024-10-20_at_10.42.36_PM.jpg",
-      tags: ["HTML", "CSS", "JavaScript"],
+      image: "/projects/10lukas.jpg",
+      tags: ["Swiper", "Cloudinary", "Netlify"],
       githubLink: "",
-      demoLink: "",
+      demoLink: "https://10lukas.netlify.app/",
     },
     {
       id: 5,
-      title: "Proyecto 1",
+      title: "Dua Lipa Set List 2025",
       description: "Descripción del proyecto 1",
-      image: "https://casesworld.pe/cdn/shop/files/WhatsApp_Image_2024-10-20_at_10.42.36_PM.jpg",
-      tags: ["HTML", "CSS", "JavaScript"],
-      githubLink: "",
+      image: "/projects/dua.jpg",
+      tags: ["HTML", "CSS"],
+      githubLink: "https://github.com/JeanDevonne/ThisIsDuaLipa",
+      demoLink: "https://jeandevonne.github.io/ThisIsDuaLipa/",
     },
     {
       id: 6,
-      title: "Proyecto 1",
+      title: "Rimac",
       description: "Descripción del proyecto 1",
-      image: "https://casesworld.pe/cdn/shop/files/WhatsApp_Image_2024-10-20_at_10.42.36_PM.jpg",
-      tags: ["HTML", "CSS", "JavaScript"],
-      githubLink: "",
-      demoLink: "",
+      image: "/projects/rimac.jpg",
+      tags: ["React.js", "TypeScript", "CSS modules"],
+      githubLink: "https://github.com/JeanDevonne/rimac-frontend-challenge",
+      demoLink: "https://rimac-frontend-challenge-theta.vercel.app/",
     }
   ]
 
@@ -58,12 +64,12 @@ export default function Home() {
     <div className="">
       <main className="flex flex-col items-center">
         <Hero />
-        <section className="w-full py-12">
+        <section id="projects" className="w-full md:py-30 py-20">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Proyectos destacados</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.id} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                <Image src={project.image} width={373.34} height={192} alt={project.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <h3 className="text-xl font-bold">{project.title}</h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">{project.description}</p>
@@ -73,8 +79,8 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="mt-4 flex gap-3">
-                    <a href={project.githubLink} className="text-blue-500 hover:underline">GitHub</a>
-                    <a href={project.demoLink} className="text-blue-500 hover:underline">Live Demo</a>
+                    <a href={project.githubLink} target="_blank" className="text-blue-500 hover:underline">GitHub</a>
+                    <a href={project.demoLink} target="_blank" className="text-blue-500 hover:underline">Live Demo</a>
                   </div>
                 </div>
               </div>

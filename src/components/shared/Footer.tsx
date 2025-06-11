@@ -13,12 +13,12 @@ export default function Footer() {
         </a>
         . Powered by{" "}
         <a
-          href="https://www.netlify.com/"
+          href="https://vercel.com/"
           className="hover:underline hover:underline-offset-4"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Netlify
+          Vercel
         </a>
         .
       </p>

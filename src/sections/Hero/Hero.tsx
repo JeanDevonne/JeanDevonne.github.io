@@ -19,12 +19,12 @@ export default function Hero() {
   }, [])
   
   return (
-    <section className="w-full py-20 flex justify-around items-center">
+    <section className="w-full mt-20 py-10 flex justify-around items-center">
       <div>
         <h1 id="hero-h1" className="text-4xl sm:text-5xl font-extrabold mb-2">JEAN LEON</h1>
         <h2 id="hero-h2" className="text-2xl sm:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-600 animate-gradient-x">Front End Engineer</h2>
         <p className="text-base">
-          I build accessible, pixel-perfect digital experiences for the web.
+          Desarrollo experiencias web accesibles, responsivas y de alto rendimiento.
         </p>
       </div>
       <picture>

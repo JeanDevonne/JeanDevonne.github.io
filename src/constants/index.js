@@ -1,166 +1,19 @@
-const navLinks = [
-  {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
-];
-
-const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-];
-
-const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
-];
-
-const logoIconsList = [
-  {
-    imgPath: "/images/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
-];
-
-const abilities = [
-  {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
-  },
-  {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
-  },
-  {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
-];
-
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
-];
-
-const techStackIcons = [
-  {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
-  },
-];
-
 const expCards = [
   {
-    review: "Jean delivered full-stack solutions with React/Node/MongoDB, implementing secure payments (Stripe) and achieving 100% client satisfaction across projects.",
+    review: "Jean entregó soluciones full-stack con React/Node/MongoDB, implementando pagos seguros (Stripe) y logrando un 100% de satisfacción del cliente en todos los proyectos.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.jpg",
     title: "Full web application development",
-    date: "Aug 2024 - Present",
+    date: "Ago 2024 - Presente",
     responsibilities: [
-      "REST API for user dashboard (Express + Mongoose).",
-      "Implemented JWT authentication with basic role management.",
-      "Configured payment flows using Stripe Payment Links.",
-      "Achieved a 100% satisfaction rate from clients on delivered projects."
+      "API REST para panel de usuario (Express + Mongoose).",
+      "Implementé autenticación JWT con gestión básica de roles.",
+      "Configuré flujos de pago usando Stripe Payment Links.",
+      "Logré una tasa de satisfacción del 100% de los clientes en los proyectos entregados."
     ],
   },
   {
-    review: "Shipped core features for Tornado Bus Company’s React 18 platform, serving 100K+ monthly users (US/Mexico). Drove 30% revenue growth via scalable payment integrations.",
+    review: "Desarrollé características principales para la plataforma React 18 de Tornado Bus Company, atendiendo a más de 100K usuarios mensuales (EE.UU./México). Impulsé un crecimiento del 30% en ingresos mediante integraciones de pago escalables.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.jpg",
     title: "React Developer",
@@ -172,7 +25,7 @@ const expCards = [
     ],
   },
   {
-    review: "Built 10+ optimized web apps (25% faster load) using modern HTML/CSS/JS. Excelled in API integrations and Git collaboration for seamless delivery.",
+    review: "Construí más de 10 aplicaciones web optimizadas (25% más rápidas) usando HTML/CSS/JS modernos. Me destaqué en integraciones de API y colaboración con Git para una entrega sin problemas.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.jpg",
     title: "Frontend Developer",
@@ -184,7 +37,7 @@ const expCards = [
     ],
   },
   {
-    review: "Delivered 5+ responsive sites using SASS/Bootstrap, accurately translating UX/UI designs from Sketch while implementing core accessibility standards.",
+    review: "Entregué más de 5 sitios responsivos usando SASS/Bootstrap, traduciendo con precisión diseños UX/UI desde Sketch mientras implementaba estándares básicos de accesibilidad.",
     imgPath: "/images/exp4.png",
     logoPath: "/images/logo4.jpg",
     title: "Frontend Junior",
@@ -196,27 +49,12 @@ const expCards = [
   },
 ];
 
-const expLogos = [
-  {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
-  },
-  {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
-  },
-];
-
 const testimonials = [
   {
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can't say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
     imgPath: "/images/client1.png",
   },
   {
@@ -237,14 +75,14 @@ const testimonials = [
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that's both modern and easy to navigate. Fantastic work overall.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Adrian's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional!",
     imgPath: "/images/client4.png",
   },
   {
@@ -256,35 +94,7 @@ const testimonials = [
   },
 ];
 
-const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
-  },
-];
-
 export {
-  words,
-  abilities,
-  logoIconsList,
-  counterItems,
   expCards,
-  expLogos,
   testimonials,
-  socialImgs,
-  techStackIcons,
-  techStackImgs,
-  navLinks,
 };
