@@ -28,7 +28,7 @@ export default function Hero() {
         </p>
       </div>
       <picture>
-        <img src="/images/avatar.jpg" height={200} width={200} alt="" className="rounded-full" />
+        <img src="/images/avatar.jpg" height={200} width={200} alt="Foto de perfil de Jean Leon" className="rounded-full" />
       </picture>
     </section>
   )

@@ -123,14 +123,14 @@ const Experience = () => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        <Image height={50} width={50} src={card.logoPath} alt={`Logo de ${card.title}`} />
                       </div>
                       <div>
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
+                        <h3 className="font-semibold text-3xl">{card.title}</h3>
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
                         </p>
-                        <p className="text-[#839CB5] italic">
+                        <p className="text-gray-600 dark:text-gray-200 italic">
                           Responsibilities
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">

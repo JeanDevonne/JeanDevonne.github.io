@@ -96,7 +96,7 @@ export default function ContactForm() {
       </div>
       <button 
         type="submit" 
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300"
+        className="w-full bg-blue-800 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300"
         disabled={isLoading}
       >
         {isLoading ? "Enviando..." : "Enviar Mensaje"}

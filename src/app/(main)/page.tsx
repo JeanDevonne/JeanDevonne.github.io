@@ -8,7 +8,7 @@ export default function Home() {
     {
       id: 1,
       title: "Groom",
-      description: "Descripción del proyecto 1",
+      description: "Sitio web creado con Astro Build con intergacion con Link by Stripe",
       image: "/projects/groom.jpg",
       tags: ["Astro", "Tailwind CSS", "Stripe"],
       githubLink: "https://github.com/JeanDevonne/groom-landing",
@@ -17,7 +17,7 @@ export default function Home() {
     {
       id: 2,
       title: "Auna Mini Site",
-      description: "Descripción del proyecto 1",
+      description: "Sitio web informativo y de ayuda a combatir el Covid-19",
       image: "/projects/auna.jpg",
       tags: ["PUG", "SASS", "Express.js", "Vercel"],
       githubLink: "https://github.com/JeanDevonne/auna-minisite",
@@ -26,7 +26,7 @@ export default function Home() {
     {
       id: 3,
       title: "Todo List",
-      description: "Descripción del proyecto 1",
+      description: "Aplicacion de tareas usando Vue,js",
       image: "/projects/todo.jpg",
       tags: ["HTML", "CSS", "Vue.js", "GitHub"],
       githubLink: "https://github.com/JeanDevonne/todo",
@@ -35,7 +35,7 @@ export default function Home() {
     {
       id: 4,
       title: "10 Lukas",
-      description: "Descripción del proyecto 1",
+      description: "Sitio web para negocio local de bar-restaurante turistico.",
       image: "/projects/10lukas.jpg",
       tags: ["Swiper", "Cloudinary", "Netlify"],
       githubLink: "",
@@ -44,7 +44,7 @@ export default function Home() {
     {
       id: 5,
       title: "Dua Lipa Set List 2025",
-      description: "Descripción del proyecto 1",
+      description: "Proyecto jugando con HTML, CSS y Spotify",
       image: "/projects/dua.jpg",
       tags: ["HTML", "CSS"],
       githubLink: "https://github.com/JeanDevonne/ThisIsDuaLipa",
@@ -53,7 +53,7 @@ export default function Home() {
     {
       id: 6,
       title: "Rimac",
-      description: "Descripción del proyecto 1",
+      description: "Aplicacion consistente en un reto",
       image: "/projects/rimac.jpg",
       tags: ["React.js", "TypeScript", "CSS modules"],
       githubLink: "https://github.com/JeanDevonne/rimac-frontend-challenge",
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.id} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <Image src={project.image} width={373.34} height={192} alt={project.title} className="w-full h-48 object-cover" />
+                <Image src={project.image} width={373.34} height={192} alt={`Thumbnail del proyecto ${project.title}`} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <h3 className="text-xl font-bold">{project.title}</h3>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">{project.description}</p>

@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between p-4 px-8 rounded-[30px] border-1 border-gray-200  dark:bg-black/50 bg-white/60 backdrop-blur-sm">
         <ul className="flex space-x-4">
           <li>
-            <Link href="#start" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Inicio
             </Link>
           </li>
